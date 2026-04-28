@@ -1,0 +1,53 @@
+{"level":"info","message":"Server started on port 3000 in development mode","timestamp":"2026-04-28T09:54:55.853Z"}
+{"level":"warn","message":"VirusTotal API key missing. Skipping check for youtube.com","timestamp":"2026-04-28T09:55:27.452Z"}
+{"level":"info","message":"HTTP Scan completed for https://youtube.com/ in 710ms","timestamp":"2026-04-28T09:55:28.068Z"}
+{"level":"info","message":"Header Scan completed for https://youtube.com/","timestamp":"2026-04-28T09:55:28.248Z"}
+{"level":"info","message":"Cookie Scan completed for https://youtube.com/. Found 7 cookies.","timestamp":"2026-04-28T09:55:28.403Z"}
+{"level":"warn","message":"AbuseIPDB API key missing. Skipping check for 142.250.205.110","timestamp":"2026-04-28T09:55:28.405Z"}
+{"level":"warn","message":"VirusTotal API key missing. Skipping check for xevserview.xevyte.com","timestamp":"2026-04-28T09:56:20.153Z"}
+{"level":"info","message":"HTTP Scan completed for https://xevserview.xevyte.com/ in 61ms","timestamp":"2026-04-28T09:56:20.210Z"}
+{"level":"info","message":"Header Scan completed for https://xevserview.xevyte.com/","timestamp":"2026-04-28T09:56:20.212Z"}
+{"level":"info","message":"Cookie Scan completed for https://xevserview.xevyte.com/. Found 0 cookies.","timestamp":"2026-04-28T09:56:20.215Z"}
+{"level":"warn","message":"AbuseIPDB API key missing. Skipping check for 103.80.162.171","timestamp":"2026-04-28T09:56:20.684Z"}
+{"level":"warn","message":"VirusTotal API key missing. Skipping check for xevyte.com","timestamp":"2026-04-28T09:57:16.871Z"}
+{"level":"info","message":"Header Scan completed for https://xevyte.com/","timestamp":"2026-04-28T09:57:17.351Z"}
+{"level":"info","message":"HTTP Scan completed for https://xevyte.com/ in 1208ms","timestamp":"2026-04-28T09:57:18.075Z"}
+{"level":"info","message":"Cookie Scan completed for https://xevyte.com/. Found 0 cookies.","timestamp":"2026-04-28T09:57:18.160Z"}
+{"level":"warn","message":"AbuseIPDB API key missing. Skipping check for 184.168.110.31","timestamp":"2026-04-28T09:57:18.161Z"}
+{"level":"warn","message":"VirusTotal API key missing. Skipping check for xevyte.com","timestamp":"2026-04-28T10:43:03.573Z"}
+{"level":"info","message":"Header Scan completed for https://xevyte.com/","timestamp":"2026-04-28T10:43:04.584Z"}
+{"level":"info","message":"Cookie Scan completed for https://xevyte.com/. Found 0 cookies.","timestamp":"2026-04-28T10:43:05.010Z"}
+{"level":"info","message":"HTTP Scan completed for https://xevyte.com/ in 1475ms","timestamp":"2026-04-28T10:43:05.023Z"}
+{"level":"warn","message":"AbuseIPDB API key missing. Skipping check for 184.168.110.31","timestamp":"2026-04-28T10:43:05.025Z"}
+{"level":"warn","message":"VirusTotal API key missing. Skipping check for www.123greetings.com","timestamp":"2026-04-28T10:44:05.017Z"}
+{"level":"info","message":"Header Scan completed for https://www.123greetings.com/","timestamp":"2026-04-28T10:44:05.832Z"}
+{"level":"info","message":"Cookie Scan completed for https://www.123greetings.com/. Found 1 cookies.","timestamp":"2026-04-28T10:44:06.076Z"}
+{"level":"info","message":"HTTP Scan completed for https://www.123greetings.com/ in 1818ms","timestamp":"2026-04-28T10:44:06.830Z"}
+{"level":"warn","message":"AbuseIPDB API key missing. Skipping check for 184.72.245.68","timestamp":"2026-04-28T10:44:06.831Z"}
+{"level":"info","message":"Server started on port 3000 in development mode","timestamp":"2026-04-28T10:53:37.547Z"}
+{"level":"warn","message":"VirusTotal API key missing. Skipping check for xevyte.com","timestamp":"2026-04-28T10:54:30.663Z"}
+{"level":"info","message":"Header Scan completed for https://xevyte.com/","timestamp":"2026-04-28T10:54:31.150Z"}
+{"level":"info","message":"Cookie Scan completed for https://xevyte.com/. Found 0 cookies.","timestamp":"2026-04-28T10:54:31.931Z"}
+{"level":"info","message":"HTTP Scan completed for https://xevyte.com/ in 1582ms","timestamp":"2026-04-28T10:54:31.941Z"}
+{"level":"warn","message":"AbuseIPDB API key missing. Skipping check for 184.168.110.31","timestamp":"2026-04-28T10:54:31.943Z"}
+{"level":"info","message":"Server started on port 3000 in development mode","timestamp":"2026-04-28T11:20:47.310Z"}
+{"level":"info","message":"VirusTotal report fetched for myntra.com","timestamp":"2026-04-28T11:21:46.634Z"}
+{"level":"error","message":"HTTP Scan failed for https://myntra.com/: timeout of 10000ms exceeded","timestamp":"2026-04-28T11:21:55.644Z"}
+{"level":"error","message":"Header Scan failed for https://myntra.com/: timeout of 10000ms exceeded","timestamp":"2026-04-28T11:21:55.649Z"}
+{"level":"error","message":"Cookie Scan failed for https://myntra.com/: timeout of 10000ms exceeded","timestamp":"2026-04-28T11:21:55.654Z"}
+{"level":"info","message":"AbuseIPDB report fetched for 104.83.196.235","timestamp":"2026-04-28T11:21:56.085Z"}
+{"level":"info","message":"Header Scan completed for https://virustotal.com/","timestamp":"2026-04-28T11:30:27.007Z"}
+{"level":"info","message":"VirusTotal report fetched for virustotal.com","timestamp":"2026-04-28T11:30:27.243Z"}
+{"level":"info","message":"HTTP Scan completed for https://virustotal.com/ in 859ms","timestamp":"2026-04-28T11:30:27.457Z"}
+{"level":"info","message":"Cookie Scan completed for https://virustotal.com/. Found 0 cookies.","timestamp":"2026-04-28T11:30:27.465Z"}
+{"level":"info","message":"AbuseIPDB report fetched for 216.239.32.21","timestamp":"2026-04-28T11:30:27.873Z"}
+{"level":"info","message":"Header Scan completed for https://virustotal.com/","timestamp":"2026-04-28T11:42:07.286Z"}
+{"level":"info","message":"VirusTotal report fetched for virustotal.com","timestamp":"2026-04-28T11:42:07.526Z"}
+{"level":"info","message":"HTTP Scan completed for https://virustotal.com/ in 941ms","timestamp":"2026-04-28T11:42:07.800Z"}
+{"level":"info","message":"Cookie Scan completed for https://virustotal.com/. Found 0 cookies.","timestamp":"2026-04-28T11:42:07.805Z"}
+{"level":"info","message":"AbuseIPDB report fetched for 216.239.32.21","timestamp":"2026-04-28T11:42:08.218Z"}
+{"level":"info","message":"HTTP Scan completed for https://flipkart.com/ in 202ms","timestamp":"2026-04-28T11:46:55.526Z"}
+{"level":"info","message":"Header Scan completed for https://flipkart.com/","timestamp":"2026-04-28T11:46:55.531Z"}
+{"level":"info","message":"Cookie Scan completed for https://flipkart.com/. Found 0 cookies.","timestamp":"2026-04-28T11:46:55.579Z"}
+{"level":"info","message":"VirusTotal report fetched for flipkart.com","timestamp":"2026-04-28T11:46:56.468Z"}
+{"level":"info","message":"AbuseIPDB report fetched for 103.243.32.90","timestamp":"2026-04-28T11:46:56.900Z"}

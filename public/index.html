@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Website Checklist Auditor | Cybersecurity Scan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <div class="background-glow"></div>
+    
+    <header>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-shield-halved"></i>
+                <span>SECURE<span>AUDIT</span></span>
+            </div>
+            <p class="tagline">Enterprise-Grade Security Checklist Auditor</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="search-section">
+            <div class="search-card glass">
+                <h2>Scan Your Website</h2>
+                <p>Analyze headers, SSL, cookies, and threat intelligence in seconds.</p>
+                <div class="input-group">
+                    <input type="text" id="domainInput" placeholder="Enter domain (e.g., example.com)" autocomplete="off">
+                    <button id="scanBtn">
+                        <span id="btnText">START SCAN</span>
+                        <div id="btnLoader" class="loader-small hidden"></div>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="resultsSection" class="hidden">
+            <div class="summary-grid">
+                <div class="score-card glass">
+                    <div class="card-header">
+                        <h3>Security Score</h3>
+                        <div class="export-actions">
+                            <button id="downloadJson" title="Export JSON"><i class="fas fa-file-code"></i></button>
+                            <button id="downloadPdf" title="Export PDF"><i class="fas fa-file-pdf"></i></button>
+                        </div>
+                    </div>
+                    <div class="score-container">
+                        <div class="gauge">
+                            <svg class="gauge-svg" viewBox="0 0 100 100">
+                                <circle class="gauge-bg" cx="50" cy="50" r="45"></circle>
+                                <circle id="scoreGauge" class="gauge-fill" cx="50" cy="50" r="45" style="stroke-dasharray: 0, 283;"></circle>
+                            </svg>
+                            <div class="score-value">
+                                <span id="scoreText">0</span>
+                                <small>health</small>
+                            </div>
+                        </div>
+                        <div id="riskRating" class="risk-badge">MEDIUM RISK</div>
+                    </div>
+                </div>
+
+                <div class="target-card glass">
+                    <h3>Scan Target</h3>
+                    <div class="target-info">
+                        <div class="info-item">
+                            <span class="label">DOMAIN</span>
+                            <span id="resDomain" class="value">example.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">IP ADDRESS</span>
+                            <span id="resIp" class="value">1.1.1.1</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">TIMESTAMP</span>
+                            <span id="resTime" class="value">2026-04-28</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabs-container glass">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="controls">SECURITY CONTROLS</button>
+                    <button class="tab-btn" data-tab="intel">REPUTATION INTEL</button>
+                    <button class="tab-btn" data-tab="report">FULL REPORT</button>
+                </div>
+                
+                <div class="tab-content active" id="controls">
+                    <div class="findings-section">
+                        <h4>Findings & Recommendations</h4>
+                        <div id="recommendationsList" class="recommendations-list">
+                            <!-- Recommendations will be injected here -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="intel">
+                    <div class="intel-grid">
+                        <div class="intel-card">
+                            <div class="intel-header">
+                                <i class="fab fa-vimeo-v"></i> <span>VirusTotal</span>
+                            </div>
+                            <div id="vtStats" class="intel-body">
+                                <!-- VT Stats injected here -->
+                            </div>
+                        </div>
+                        <div class="intel-card">
+                            <div class="intel-header">
+                                <i class="fas fa-bug"></i> <span>AbuseIPDB</span>
+                            </div>
+                            <div id="abuseStats" class="intel-body">
+                                <!-- Abuse Stats injected here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="report">
+                    <div class="pdf-report-tab">
+                        <i class="fas fa-file-pdf fa-4x" style="color: var(--accent-primary); margin-bottom: 1.5rem;"></i>
+                        <h3>Professional Security Audit PDF</h3>
+                        <p>Generate and download a comprehensive PDF report containing all security controls, threat intelligence, and remediation steps.</p>
+                        <button id="downloadPdfTab" class="btn-primary" style="margin-top: 1.5rem;">
+                            <i class="fas fa-download"></i> DOWNLOAD PDF REPORT
+                        </button>
+                    </div>
+                    <pre id="rawReport" class="code-block" style="margin-top: 2rem; opacity: 0.5;"></pre>
+                </div>
+            </div>
+        </section>
+
+        <section id="historySection" class="history-section glass mt-2">
+            <h3>Recent Scans</h3>
+            <div id="historyList" class="history-list">
+                <!-- History items injected here -->
+            </div>
+        </section>
+
+        <section id="loaderSection" class="hidden">
+            <div class="loading-container">
+                <div class="scanner-anim">
+                    <div class="scanner-circle"></div>
+                    <div class="scanner-line"></div>
+                </div>
+                <h3>Running Security Audit...</h3>
+                <p>Analyzing headers, resolving DNS, and querying threat intelligence.</p>
+            </div>
+        </section>
+
+        <div id="errorMsg" class="error-toast hidden"></div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Secure Audit Backend Engine. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

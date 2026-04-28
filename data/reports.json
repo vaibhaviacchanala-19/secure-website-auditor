@@ -1,0 +1,995 @@
+[
+  {
+    "id": "62404ffc-6122-40db-8b53-e5942aaae6fa",
+    "target": {
+      "domain": "flipkart.com",
+      "normalizedUrl": "https://flipkart.com/",
+      "ip": "103.243.32.90",
+      "timestamp": "2026-04-28T11:46:56.901Z"
+    },
+    "securityAudit": {
+      "score": 45,
+      "rating": "Medium Risk",
+      "findings": [
+        "HSTS (Strict-Transport-Security) header is missing.",
+        "Content-Security-Policy (CSP) is not defined.",
+        "X-Frame-Options header is missing."
+      ],
+      "recommendations": [
+        "Enable HSTS to force browsers to use HTTPS.",
+        "Implement a strong CSP to prevent XSS and data injection attacks.",
+        "Add X-Frame-Options (DENY or SAMEORIGIN) to prevent Clickjacking."
+      ]
+    },
+    "details": {
+      "summary": {
+        "http": {
+          "httpsEnabled": true,
+          "statusCode": 403,
+          "responseTime": "202ms",
+          "status": "Warning"
+        },
+        "ssl": {
+          "valid": true,
+          "authorizedError": null,
+          "issuer": "GlobalSign nv-sa",
+          "expiryDate": "Jul 17 03:39:25 2026 GMT",
+          "daysRemaining": 79,
+          "isExpired": false
+        },
+        "dns": {
+          "ip": [
+            "103.243.32.90"
+          ],
+          "mx": [
+            {
+              "exchange": "eu-smtp-inbound-1.mimecast.com",
+              "priority": 1
+            },
+            {
+              "exchange": "eu-smtp-inbound-2.mimecast.com",
+              "priority": 1
+            }
+          ],
+          "spf": "v=spf1 include:eu._netblocks.mimecast.com include:zoho.flipkart.com include:_spf.google.com include:spf.protection.outlook.com include:spf.flipkart.com ip4:64.56.194.128/25 ip4:74.117.200.0/21 ip4:129.91.5.0/24 ip4:129.152.0.0/17 ip4:141.145.85.0/24 ip4:1",
+          "dmarc": "v=DMARC1; p=quarantine; rua=mailto:2e945089eaf4697@rep.dmarcanalyzer.com; ruf=mailto:2e945089eaf4697@for.dmarcanalyzer.com; fo=1;",
+          "cname": "No CNAME"
+        },
+        "headers": {
+          "hsts": "Missing",
+          "csp": "Missing",
+          "xFrameOptions": "Missing",
+          "xContentTypeOptions": "Missing",
+          "referrerPolicy": "Missing"
+        },
+        "cookies": {
+          "message": "No cookies set by this site."
+        }
+      },
+      "reputationIntel": {
+        "virustotal": {
+          "malicious": 0,
+          "suspicious": 0,
+          "harmless": 62,
+          "undetermined": 29,
+          "reputation": 0,
+          "status": "success"
+        },
+        "abuseipdb": {
+          "abuseConfidenceScore": 0,
+          "totalReports": 0,
+          "lastReportedAt": "2025-07-28T08:23:47+00:00",
+          "country": "IN",
+          "usageType": "Data Center/Web Hosting/Transit",
+          "isp": "Flipkart Internet Pvt Ltd",
+          "domain": "flipkart.com",
+          "isWhitelisted": false,
+          "status": "success"
+        }
+      }
+    },
+    "status": "completed"
+  },
+  {
+    "id": "b5395b37-ef4a-4943-a285-741265a0ebe4",
+    "target": {
+      "domain": "virustotal.com",
+      "normalizedUrl": "https://virustotal.com/",
+      "ip": "216.239.32.21",
+      "timestamp": "2026-04-28T11:42:08.219Z"
+    },
+    "securityAudit": {
+      "score": 60,
+      "rating": "Medium Risk",
+      "findings": [
+        "HSTS (Strict-Transport-Security) header is missing.",
+        "Content-Security-Policy (CSP) is not defined.",
+        "X-Frame-Options header is missing."
+      ],
+      "recommendations": [
+        "Enable HSTS to force browsers to use HTTPS.",
+        "Implement a strong CSP to prevent XSS and data injection attacks.",
+        "Add X-Frame-Options (DENY or SAMEORIGIN) to prevent Clickjacking."
+      ]
+    },
+    "details": {
+      "summary": {
+        "http": {
+          "httpsEnabled": true,
+          "statusCode": 200,
+          "responseTime": "941ms",
+          "status": "Healthy"
+        },
+        "ssl": {
+          "valid": true,
+          "authorizedError": null,
+          "issuer": "Google Trust Services",
+          "expiryDate": "Jun  5 13:26:29 2026 GMT",
+          "daysRemaining": 38,
+          "isExpired": false
+        },
+        "dns": {
+          "ip": [
+            "216.239.32.21",
+            "216.239.38.21",
+            "216.239.36.21",
+            "216.239.34.21"
+          ],
+          "mx": [
+            {
+              "exchange": "aspmx3.googlemail.com",
+              "priority": 30
+            },
+            {
+              "exchange": "alt1.aspmx.l.google.com",
+              "priority": 20
+            },
+            {
+              "exchange": "alt2.aspmx.l.google.com",
+              "priority": 20
+            },
+            {
+              "exchange": "aspmx.l.google.com",
+              "priority": 10
+            },
+            {
+              "exchange": "aspmx2.googlemail.com",
+              "priority": 30
+            }
+          ],
+          "spf": "v=spf1 include:_spf.google.com include:_spf.zdsys.com include:mail.zendesk.com include:2567647.spf07.hubspotemail.net -all",
+          "dmarc": "v=DMARC1; p=quarantine; sp=quarantine; rua=mailto:mailauth-reports@google.com",
+          "cname": "No CNAME"
+        },
+        "headers": {
+          "hsts": "Missing",
+          "csp": "Missing",
+          "xFrameOptions": "Missing",
+          "xContentTypeOptions": "Missing",
+          "referrerPolicy": "Missing"
+        },
+        "cookies": {
+          "message": "No cookies set by this site."
+        }
+      },
+      "reputationIntel": {
+        "virustotal": {
+          "malicious": 0,
+          "suspicious": 0,
+          "harmless": 61,
+          "undetermined": 30,
+          "reputation": 542,
+          "status": "success"
+        },
+        "abuseipdb": {
+          "abuseConfidenceScore": 0,
+          "totalReports": 3,
+          "lastReportedAt": "2026-04-08T22:38:50+00:00",
+          "country": "US",
+          "usageType": "Content Delivery Network",
+          "isp": "Google LLC",
+          "domain": "google.com",
+          "isWhitelisted": true,
+          "status": "success"
+        }
+      }
+    },
+    "status": "completed"
+  },
+  {
+    "id": "d587f055-15f5-4c8a-a0c2-05d07415a34f",
+    "target": {
+      "domain": "virustotal.com",
+      "normalizedUrl": "https://virustotal.com/",
+      "ip": "216.239.32.21",
+      "timestamp": "2026-04-28T11:30:27.874Z"
+    },
+    "securityAudit": {
+      "score": 60,
+      "rating": "Medium Risk",
+      "findings": [
+        "HSTS (Strict-Transport-Security) header is missing.",
+        "Content-Security-Policy (CSP) is not defined.",
+        "X-Frame-Options header is missing."
+      ],
+      "recommendations": [
+        "Enable HSTS to force browsers to use HTTPS.",
+        "Implement a strong CSP to prevent XSS and data injection attacks.",
+        "Add X-Frame-Options (DENY or SAMEORIGIN) to prevent Clickjacking."
+      ]
+    },
+    "details": {
+      "summary": {
+        "http": {
+          "httpsEnabled": true,
+          "statusCode": 200,
+          "responseTime": "859ms",
+          "status": "Healthy"
+        },
+        "ssl": {
+          "valid": true,
+          "authorizedError": null,
+          "issuer": "Google Trust Services",
+          "expiryDate": "Jun  5 13:26:29 2026 GMT",
+          "daysRemaining": 38,
+          "isExpired": false
+        },
+        "dns": {
+          "ip": [
+            "216.239.32.21",
+            "216.239.38.21",
+            "216.239.36.21",
+            "216.239.34.21"
+          ],
+          "mx": [
+            {
+              "exchange": "alt2.aspmx.l.google.com",
+              "priority": 20
+            },
+            {
+              "exchange": "aspmx3.googlemail.com",
+              "priority": 30
+            },
+            {
+              "exchange": "aspmx.l.google.com",
+              "priority": 10
+            },
+            {
+              "exchange": "aspmx2.googlemail.com",
+              "priority": 30
+            },
+            {
+              "exchange": "alt1.aspmx.l.google.com",
+              "priority": 20
+            }
+          ],
+          "spf": "v=spf1 include:_spf.google.com include:_spf.zdsys.com include:mail.zendesk.com include:2567647.spf07.hubspotemail.net -all",
+          "dmarc": "v=DMARC1; p=quarantine; sp=quarantine; rua=mailto:mailauth-reports@google.com",
+          "cname": "No CNAME"
+        },
+        "headers": {
+          "hsts": "Missing",
+          "csp": "Missing",
+          "xFrameOptions": "Missing",
+          "xContentTypeOptions": "Missing",
+          "referrerPolicy": "Missing"
+        },
+        "cookies": {
+          "message": "No cookies set by this site."
+        }
+      },
+      "reputationIntel": {
+        "virustotal": {
+          "malicious": 0,
+          "suspicious": 0,
+          "harmless": 61,
+          "undetermined": 30,
+          "reputation": 542,
+          "status": "success"
+        },
+        "abuseipdb": {
+          "abuseConfidenceScore": 0,
+          "totalReports": 3,
+          "lastReportedAt": "2026-04-08T22:38:50+00:00",
+          "country": "US",
+          "usageType": "Content Delivery Network",
+          "isp": "Google LLC",
+          "domain": "google.com",
+          "isWhitelisted": true,
+          "status": "success"
+        }
+      }
+    },
+    "status": "completed"
+  },
+  {
+    "id": "b823cc94-468d-461e-ac91-a8f6a5dce9bf",
+    "target": {
+      "domain": "myntra.com",
+      "normalizedUrl": "https://myntra.com/",
+      "ip": "104.83.196.235",
+      "timestamp": "2026-04-28T11:21:56.090Z"
+    },
+    "securityAudit": {
+      "score": 65,
+      "rating": "Medium Risk",
+      "findings": [
+        "HTTPS is not enabled."
+      ],
+      "recommendations": [
+        "Enable HTTPS by installing an SSL/TLS certificate."
+      ]
+    },
+    "details": {
+      "summary": {
+        "http": {
+          "error": "timeout of 10000ms exceeded",
+          "status": "Error"
+        },
+        "ssl": {
+          "valid": true,
+          "authorizedError": null,
+          "issuer": "GlobalSign nv-sa",
+          "expiryDate": "Dec 26 07:21:10 2026 GMT",
+          "daysRemaining": 241,
+          "isExpired": false
+        },
+        "dns": {
+          "ip": [
+            "104.83.196.235"
+          ],
+          "mx": [
+            {
+              "exchange": "eu-smtp-inbound-1.mimecast.com",
+              "priority": 1
+            },
+            {
+              "exchange": "eu-smtp-inbound-2.mimecast.com",
+              "priority": 1
+            }
+          ],
+          "spf": "v=spf1 include:sendclean.net include:eu._netblocks.mimecast.com include:_spf.google.com include:_spf1.myntra.com include:_spf2.myntra.com include:amazonses.com include:spf.falconide.com include:service-now.com -all",
+          "dmarc": "v=DMARC1; p=quarantine; rua=mailto:2e945089eaf4697@rep.dmarcanalyzer.com; ruf=mailto:2e945089eaf4697@for.dmarcanalyzer.com; fo=1;",
+          "cname": "No CNAME"
+        },
+        "headers": {
+          "error": "Failed to fetch headers: timeout of 10000ms exceeded"
+        },
+        "cookies": {
+          "error": "Failed to fetch cookies: timeout of 10000ms exceeded"
+        }
+      },
+      "reputationIntel": {
+        "virustotal": {
+          "malicious": 0,
+          "suspicious": 0,
+          "harmless": 60,
+          "undetermined": 31,
+          "reputation": 1,
+          "status": "success"
+        },
+        "abuseipdb": {
+          "abuseConfidenceScore": 0,
+          "totalReports": 0,
+          "lastReportedAt": null,
+          "country": "SG",
+          "usageType": "Data Center/Web Hosting/Transit",
+          "isp": "Akamai Technologies, Inc.",
+          "domain": "akamai.com",
+          "isWhitelisted": false,
+          "status": "success"
+        }
+      }
+    },
+    "status": "completed"
+  },
+  {
+    "id": "16f8d040-f4bf-4506-9f60-95ecdd35e7af",
+    "target": {
+      "domain": "xevyte.com",
+      "normalizedUrl": "https://xevyte.com/",
+      "ip": "184.168.110.31",
+      "timestamp": "2026-04-28T10:54:31.947Z"
+    },
+    "securityAudit": {
+      "score": 60,
+      "rating": "Medium Risk",
+      "findings": [
+        "HSTS (Strict-Transport-Security) header is missing.",
+        "Content-Security-Policy (CSP) is not defined.",
+        "X-Frame-Options header is missing."
+      ],
+      "recommendations": [
+        "Enable HSTS to force browsers to use HTTPS.",
+        "Implement a strong CSP to prevent XSS and data injection attacks.",
+        "Add X-Frame-Options (DENY or SAMEORIGIN) to prevent Clickjacking."
+      ]
+    },
+    "details": {
+      "summary": {
+        "http": {
+          "httpsEnabled": true,
+          "statusCode": 200,
+          "responseTime": "1582ms",
+          "status": "Healthy"
+        },
+        "ssl": {
+          "valid": true,
+          "authorizedError": null,
+          "issuer": "Let's Encrypt",
+          "expiryDate": "Jul  8 05:44:34 2026 GMT",
+          "daysRemaining": 70,
+          "isExpired": false
+        },
+        "dns": {
+          "ip": [
+            "184.168.110.31"
+          ],
+          "mx": [
+            {
+              "exchange": "mx1.xevyte.com",
+              "priority": 10
+            },
+            {
+              "exchange": "xevyte-com.mail.protection.outlook.com",
+              "priority": 0
+            }
+          ],
+          "spf": "v=spf1 ip4:98.130.141.38 include:spf.protection.outlook.com ~all",
+          "dmarc": "v=DMARC1; p=none; rua=mailto:dmarcreports@xevyte.com; pct=100",
+          "cname": "No CNAME"
+        },
+        "headers": {
+          "hsts": "Missing",
+          "csp": "Missing",
+          "xFrameOptions": "Missing",
+          "xContentTypeOptions": "Missing",
+          "referrerPolicy": "Missing"
+        },
+        "cookies": {
+          "message": "No cookies set by this site."
+        }
+      },
+      "reputationIntel": {
+        "virustotal": {
+          "error": "VirusTotal API key missing",
+          "status": "skipped"
+        },
+        "abuseipdb": {
+          "error": "AbuseIPDB API key missing",
+          "status": "skipped"
+        }
+      }
+    },
+    "status": "completed"
+  },
+  {
+    "id": "f4e4f447-926a-4e40-9b1a-1bd919327bfa",
+    "target": {
+      "domain": "www.123greetings.com",
+      "normalizedUrl": "https://www.123greetings.com/",
+      "ip": "184.72.245.68",
+      "timestamp": "2026-04-28T10:44:06.833Z"
+    },
+    "securityAudit": {
+      "score": 85,
+      "rating": "Low Risk",
+      "findings": [
+        "X-Frame-Options header is missing.",
+        "1 cookie(s) missing the 'Secure' attribute.",
+        "1 cookie(s) missing the 'HttpOnly' attribute.",
+        "SPF record is missing.",
+        "DMARC record is missing."
+      ],
+      "recommendations": [
+        "Add X-Frame-Options (DENY or SAMEORIGIN) to prevent Clickjacking.",
+        "Ensure all sensitive cookies have the 'Secure' flag.",
+        "Add 'HttpOnly' to cookies to prevent access via JavaScript.",
+        "Add an SPF TXT record to your DNS to prevent email spoofing.",
+        "Implement DMARC to define how to handle emails that fail SPF/DKIM."
+      ]
+    },
+    "details": {
+      "summary": {
+        "http": {
+          "httpsEnabled": true,
+          "statusCode": 200,
+          "responseTime": "1818ms",
+          "status": "Healthy"
+        },
+        "ssl": {
+          "valid": true,
+          "authorizedError": null,
+          "issuer": "Let's Encrypt",
+          "expiryDate": "Jul 17 01:39:08 2026 GMT",
+          "daysRemaining": 79,
+          "isExpired": false
+        },
+        "dns": {
+          "ip": [
+            "184.72.245.68",
+            "184.72.244.154"
+          ],
+          "mx": [],
+          "spf": "Missing",
+          "dmarc": "Missing",
+          "cname": "No CNAME"
+        },
+        "headers": {
+          "hsts": "max-age=63072000; includeSubdomains; preload",
+          "csp": "frame-ancestors self  https://*.123greetings.com http://*.123g.us https://*.123g.us;",
+          "xFrameOptions": "Missing",
+          "xContentTypeOptions": "nosniff",
+          "referrerPolicy": "no-referrer-when-downgrade"
+        },
+        "cookies": {
+          "count": 1,
+          "cookies": [
+            {
+              "name": "SERVERID",
+              "secure": false,
+              "httpOnly": false,
+              "sameSite": "Missing"
+            }
+          ]
+        }
+      },
+      "reputationIntel": {
+        "virustotal": {
+          "error": "VirusTotal API key missing",
+          "status": "skipped"
+        },
+        "abuseipdb": {
+          "error": "AbuseIPDB API key missing",
+          "status": "skipped"
+        }
+      }
+    },
+    "status": "completed"
+  },
+  {
+    "id": "ed407f3b-a73f-495c-b090-2f9a004193b1",
+    "target": {
+      "domain": "xevyte.com",
+      "normalizedUrl": "https://xevyte.com/",
+      "ip": "184.168.110.31",
+      "timestamp": "2026-04-28T10:43:05.026Z"
+    },
+    "securityAudit": {
+      "score": 60,
+      "rating": "Medium Risk",
+      "findings": [
+        "HSTS (Strict-Transport-Security) header is missing.",
+        "Content-Security-Policy (CSP) is not defined.",
+        "X-Frame-Options header is missing."
+      ],
+      "recommendations": [
+        "Enable HSTS to force browsers to use HTTPS.",
+        "Implement a strong CSP to prevent XSS and data injection attacks.",
+        "Add X-Frame-Options (DENY or SAMEORIGIN) to prevent Clickjacking."
+      ]
+    },
+    "details": {
+      "summary": {
+        "http": {
+          "httpsEnabled": true,
+          "statusCode": 200,
+          "responseTime": "1475ms",
+          "status": "Healthy"
+        },
+        "ssl": {
+          "valid": true,
+          "authorizedError": null,
+          "issuer": "Let's Encrypt",
+          "expiryDate": "Jul  8 05:44:34 2026 GMT",
+          "daysRemaining": 70,
+          "isExpired": false
+        },
+        "dns": {
+          "ip": [
+            "184.168.110.31"
+          ],
+          "mx": [
+            {
+              "exchange": "xevyte-com.mail.protection.outlook.com",
+              "priority": 0
+            },
+            {
+              "exchange": "mx1.xevyte.com",
+              "priority": 10
+            }
+          ],
+          "spf": "v=spf1 ip4:98.130.141.38 include:spf.protection.outlook.com ~all",
+          "dmarc": "v=DMARC1; p=none; rua=mailto:dmarcreports@xevyte.com; pct=100",
+          "cname": "No CNAME"
+        },
+        "headers": {
+          "hsts": "Missing",
+          "csp": "Missing",
+          "xFrameOptions": "Missing",
+          "xContentTypeOptions": "Missing",
+          "referrerPolicy": "Missing"
+        },
+        "cookies": {
+          "message": "No cookies set by this site."
+        }
+      },
+      "reputationIntel": {
+        "virustotal": {
+          "error": "VirusTotal API key missing",
+          "status": "skipped"
+        },
+        "abuseipdb": {
+          "error": "AbuseIPDB API key missing",
+          "status": "skipped"
+        }
+      }
+    },
+    "status": "completed"
+  },
+  {
+    "id": "a143a98f-ceaa-465e-8c83-cbe4297ef743",
+    "target": {
+      "domain": "xevyte.com",
+      "normalizedUrl": "https://xevyte.com/",
+      "ip": "184.168.110.31",
+      "timestamp": "2026-04-28T09:57:18.161Z"
+    },
+    "securityAudit": {
+      "score": 60,
+      "rating": "Medium Risk",
+      "findings": [
+        "HSTS (Strict-Transport-Security) header is missing.",
+        "Content-Security-Policy (CSP) is not defined.",
+        "X-Frame-Options header is missing."
+      ],
+      "recommendations": [
+        "Enable HSTS to force browsers to use HTTPS.",
+        "Implement a strong CSP to prevent XSS and data injection attacks.",
+        "Add X-Frame-Options (DENY or SAMEORIGIN) to prevent Clickjacking."
+      ]
+    },
+    "details": {
+      "summary": {
+        "http": {
+          "httpsEnabled": true,
+          "statusCode": 200,
+          "responseTime": "1208ms",
+          "status": "Healthy"
+        },
+        "ssl": {
+          "valid": true,
+          "authorizedError": null,
+          "issuer": "Let's Encrypt",
+          "expiryDate": "Jul  8 05:44:34 2026 GMT",
+          "daysRemaining": 70,
+          "isExpired": false
+        },
+        "dns": {
+          "ip": [
+            "184.168.110.31"
+          ],
+          "mx": [
+            {
+              "exchange": "mx1.xevyte.com",
+              "priority": 10
+            },
+            {
+              "exchange": "xevyte-com.mail.protection.outlook.com",
+              "priority": 0
+            }
+          ],
+          "spf": "v=spf1 ip4:98.130.141.38 include:spf.protection.outlook.com ~all",
+          "dmarc": "v=DMARC1; p=none; rua=mailto:dmarcreports@xevyte.com; pct=100",
+          "cname": "No CNAME"
+        },
+        "headers": {
+          "hsts": "Missing",
+          "csp": "Missing",
+          "xFrameOptions": "Missing",
+          "xContentTypeOptions": "Missing",
+          "referrerPolicy": "Missing"
+        },
+        "cookies": {
+          "message": "No cookies set by this site."
+        }
+      },
+      "reputationIntel": {
+        "virustotal": {
+          "error": "VirusTotal API key missing",
+          "status": "skipped"
+        },
+        "abuseipdb": {
+          "error": "AbuseIPDB API key missing",
+          "status": "skipped"
+        }
+      }
+    },
+    "status": "completed"
+  },
+  {
+    "id": "b7b6e3ad-943d-4326-a40e-3ce171f3b8fd",
+    "target": {
+      "domain": "xevserview.xevyte.com",
+      "normalizedUrl": "https://xevserview.xevyte.com/",
+      "ip": "103.80.162.171",
+      "timestamp": "2026-04-28T09:56:20.685Z"
+    },
+    "securityAudit": {
+      "score": 85,
+      "rating": "Low Risk",
+      "findings": [
+        "SPF record is missing.",
+        "DMARC record is missing."
+      ],
+      "recommendations": [
+        "Add an SPF TXT record to your DNS to prevent email spoofing.",
+        "Implement DMARC to define how to handle emails that fail SPF/DKIM."
+      ]
+    },
+    "details": {
+      "summary": {
+        "http": {
+          "httpsEnabled": true,
+          "statusCode": 401,
+          "responseTime": "61ms",
+          "status": "Warning"
+        },
+        "ssl": {
+          "valid": true,
+          "authorizedError": null,
+          "issuer": "Let's Encrypt",
+          "expiryDate": "Jun  9 10:13:52 2026 GMT",
+          "daysRemaining": 42,
+          "isExpired": false
+        },
+        "dns": {
+          "ip": [
+            "103.80.162.171"
+          ],
+          "mx": [],
+          "spf": "Missing",
+          "dmarc": "Missing",
+          "cname": "No CNAME"
+        },
+        "headers": {
+          "hsts": "max-age=63072000; includeSubDomains; preload",
+          "csp": "default-src 'self' 'unsafe-inline' 'unsafe-eval' https: wss:; img-src 'self' data:; font-src 'self' data:;",
+          "xFrameOptions": "DENY",
+          "xContentTypeOptions": "nosniff",
+          "referrerPolicy": "strict-origin-when-cross-origin"
+        },
+        "cookies": {
+          "message": "No cookies set by this site."
+        }
+      },
+      "reputationIntel": {
+        "virustotal": {
+          "error": "VirusTotal API key missing",
+          "status": "skipped"
+        },
+        "abuseipdb": {
+          "error": "AbuseIPDB API key missing",
+          "status": "skipped"
+        }
+      }
+    },
+    "status": "completed"
+  },
+  {
+    "id": "e3cd8052-e37b-4d58-bb2e-9754d85247a6",
+    "target": {
+      "domain": "youtube.com",
+      "normalizedUrl": "https://youtube.com/",
+      "ip": "142.250.205.110",
+      "timestamp": "2026-04-28T09:55:28.407Z"
+    },
+    "securityAudit": {
+      "score": 95,
+      "rating": "Low Risk",
+      "findings": [],
+      "recommendations": []
+    },
+    "details": {
+      "summary": {
+        "http": {
+          "httpsEnabled": true,
+          "statusCode": 200,
+          "responseTime": "710ms",
+          "status": "Healthy"
+        },
+        "ssl": {
+          "valid": true,
+          "authorizedError": null,
+          "issuer": "Google Trust Services",
+          "expiryDate": "Jun 22 08:35:16 2026 GMT",
+          "daysRemaining": 54,
+          "isExpired": false
+        },
+        "dns": {
+          "ip": [
+            "142.250.205.110"
+          ],
+          "mx": [
+            {
+              "exchange": "smtp.google.com",
+              "priority": 0
+            }
+          ],
+          "spf": "v=spf1 include:google.com mx -all",
+          "dmarc": "v=DMARC1; p=reject; rua=mailto:mailauth-reports@google.com",
+          "cname": "No CNAME"
+        },
+        "headers": {
+          "hsts": "max-age=31536000",
+          "csp": "require-trusted-types-for 'script', base-uri 'self';object-src 'none';script-src 'report-sample' 'nonce-0FfGrXl92JWjzD1PY3v1bQ' 'unsafe-inline' 'strict-dynamic' https: http: 'unsafe-eval';report-uri https://csp.withgoogle.com/csp/youtube_main/strict",
+          "xFrameOptions": "SAMEORIGIN",
+          "xContentTypeOptions": "nosniff",
+          "referrerPolicy": "Missing"
+        },
+        "cookies": {
+          "count": 7,
+          "cookies": [
+            {
+              "name": "__Secure-YNID",
+              "secure": true,
+              "httpOnly": true,
+              "sameSite": "none"
+            },
+            {
+              "name": "GPS",
+              "secure": true,
+              "httpOnly": true,
+              "sameSite": "Missing"
+            },
+            {
+              "name": "YSC",
+              "secure": true,
+              "httpOnly": true,
+              "sameSite": "none"
+            },
+            {
+              "name": "__Secure-ROLLOUT_TOKEN",
+              "secure": true,
+              "httpOnly": true,
+              "sameSite": "none"
+            },
+            {
+              "name": "__Secure-YEC",
+              "secure": true,
+              "httpOnly": true,
+              "sameSite": "lax"
+            },
+            {
+              "name": "VISITOR_INFO1_LIVE",
+              "secure": true,
+              "httpOnly": true,
+              "sameSite": "none"
+            },
+            {
+              "name": "VISITOR_PRIVACY_METADATA",
+              "secure": true,
+              "httpOnly": true,
+              "sameSite": "none"
+            }
+          ]
+        }
+      },
+      "reputationIntel": {
+        "virustotal": {
+          "error": "VirusTotal API key missing",
+          "status": "skipped"
+        },
+        "abuseipdb": {
+          "error": "AbuseIPDB API key missing",
+          "status": "skipped"
+        }
+      }
+    },
+    "status": "completed"
+  },
+  {
+    "id": "974f9762-dbd7-4a93-a0bd-89392f6bd0a2",
+    "target": {
+      "domain": "google.com",
+      "normalizedUrl": "https://google.com/",
+      "ip": "142.251.222.142",
+      "timestamp": "2026-04-28T08:48:14.322Z"
+    },
+    "securityAudit": {
+      "score": 55,
+      "rating": "Medium Risk",
+      "findings": [
+        "HSTS (Strict-Transport-Security) header is missing.",
+        "Content-Security-Policy (CSP) is not defined.",
+        "1 cookie(s) missing the 'Secure' attribute.",
+        "1 cookie(s) missing the 'HttpOnly' attribute."
+      ],
+      "recommendations": [
+        "Enable HSTS to force browsers to use HTTPS.",
+        "Implement a strong CSP to prevent XSS and data injection attacks.",
+        "Ensure all sensitive cookies have the 'Secure' flag.",
+        "Add 'HttpOnly' to cookies to prevent access via JavaScript."
+      ]
+    },
+    "details": {
+      "summary": {
+        "http": {
+          "httpsEnabled": true,
+          "statusCode": 200,
+          "responseTime": "948ms",
+          "status": "Healthy"
+        },
+        "ssl": {
+          "valid": true,
+          "authorizedError": null,
+          "issuer": "Google Trust Services",
+          "expiryDate": "Jun 22 08:35:16 2026 GMT",
+          "daysRemaining": 54,
+          "isExpired": false
+        },
+        "dns": {
+          "ip": [
+            "142.251.222.142"
+          ],
+          "mx": [
+            {
+              "exchange": "smtp.google.com",
+              "priority": 10
+            }
+          ],
+          "spf": "v=spf1 include:_spf.google.com ~all",
+          "dmarc": "v=DMARC1; p=reject; rua=mailto:mailauth-reports@google.com",
+          "cname": "No CNAME"
+        },
+        "headers": {
+          "hsts": "Missing",
+          "csp": "Missing",
+          "xFrameOptions": "SAMEORIGIN",
+          "xContentTypeOptions": "Missing",
+          "referrerPolicy": "Missing"
+        },
+        "cookies": {
+          "count": 4,
+          "cookies": [
+            {
+              "name": "__Secure-STRP",
+              "secure": true,
+              "httpOnly": false,
+              "sameSite": "strict"
+            },
+            {
+              "name": "AEC",
+              "secure": true,
+              "httpOnly": true,
+              "sameSite": "lax"
+            },
+            {
+              "name": "NID",
+              "secure": false,
+              "httpOnly": true,
+              "sameSite": "Missing"
+            },
+            {
+              "name": "__Secure-BUCKET",
+              "secure": true,
+              "httpOnly": true,
+              "sameSite": "Missing"
+            }
+          ]
+        }
+      },
+      "reputationIntel": {
+        "virustotal": {
+          "error": "VirusTotal API key missing",
+          "status": "skipped"
+        },
+        "abuseipdb": {
+          "error": "AbuseIPDB API key missing",
+          "status": "skipped"
+        }
+      }
+    },
+    "status": "completed"
+  }
+]
