@@ -1,10 +1,10 @@
-# 🛡️ Secure Website Checklist Auditor
+# Secure Website Checklist Auditor
 
 A comprehensive enterprise-grade security auditing tool built with Node.js, Express, and Vanilla JS. It analyzes website headers, SSL configurations, DNS records, and integrates third-party threat intelligence to provide a weighted security score and actionable recommendations.
 
-![Dashboard Preview](https://via.placeholder.com/1000x500?text=Secure+Audit+Dashboard+Preview)
+![Dashboard Preview](public/dashboard_preview.png)
 
-## 🚀 Key Features
+## Key Features
 
 - **Deep Security Scanning**: Analyzes HSTS, CSP, X-Frame-Options, Cookies (Secure/HttpOnly), and more.
 - **SSL/TLS Audit**: Verifies certificate validity, expiry, and issuer details.
@@ -15,7 +15,7 @@ A comprehensive enterprise-grade security auditing tool built with Node.js, Expr
 - **Exports**: Download audit reports as **JSON** or professional **PDF** files.
 - **Premium UI**: Responsive dark theme with glassmorphism and animated loading states.
 
-## 📁 Project Structure
+##  Project Structure
 
 ```text
 ├── engine/             # Scoring & Recommendation logic
@@ -30,7 +30,7 @@ A comprehensive enterprise-grade security auditing tool built with Node.js, Expr
 └── server.js           # Entry point
 ```
 
-## 🛠️ Setup & Installation
+##  Setup & Installation
 
 1.  **Clone the Repo**:
     ```bash
@@ -53,7 +53,7 @@ A comprehensive enterprise-grade security auditing tool built with Node.js, Expr
     npm run dev
     ```
 
-## 🌐 Deployment Guide
+## Deployment Guide
 
 ### Render / Railway
 1. Connect your GitHub repository.
@@ -67,5 +67,5 @@ A comprehensive enterprise-grade security auditing tool built with Node.js, Expr
 3. Start with: `pm2 start server.js --name secure-audit`.
 4. Configure Nginx as a reverse proxy for port 3000.
 
-## 📄 License
+## License
 MIT License. Built for cybersecurity awareness and auditing.
