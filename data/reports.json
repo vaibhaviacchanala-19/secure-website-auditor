@@ -1,5 +1,120 @@
 [
   {
+    "id": "f7cbdbb6-73df-49f4-95db-940094bab2eb",
+    "target": {
+      "domain": "google.com",
+      "normalizedUrl": "https://google.com/",
+      "ip": "142.251.223.174",
+      "timestamp": "2026-04-29T04:53:03.525Z"
+    },
+    "securityAudit": {
+      "score": 55,
+      "rating": "Medium Risk",
+      "findings": [
+        "HSTS (Strict-Transport-Security) header is missing.",
+        "Content-Security-Policy (CSP) is not defined.",
+        "1 cookie(s) missing the 'Secure' attribute.",
+        "1 cookie(s) missing the 'HttpOnly' attribute."
+      ],
+      "recommendations": [
+        "Enable HSTS to force browsers to use HTTPS.",
+        "Implement a strong CSP to prevent XSS and data injection attacks.",
+        "Ensure all sensitive cookies have the 'Secure' flag.",
+        "Add 'HttpOnly' to cookies to prevent access via JavaScript."
+      ]
+    },
+    "details": {
+      "summary": {
+        "http": {
+          "httpsEnabled": true,
+          "statusCode": 200,
+          "responseTime": "1553ms",
+          "status": "Healthy"
+        },
+        "ssl": {
+          "valid": true,
+          "authorizedError": null,
+          "issuer": "Google Trust Services",
+          "expiryDate": "Jun 22 08:35:16 2026 GMT",
+          "daysRemaining": 54,
+          "isExpired": false
+        },
+        "dns": {
+          "ip": [
+            "142.251.223.174"
+          ],
+          "mx": [
+            {
+              "exchange": "smtp.google.com",
+              "priority": 10
+            }
+          ],
+          "spf": "v=spf1 include:_spf.google.com ~all",
+          "dmarc": "v=DMARC1; p=reject; rua=mailto:mailauth-reports@google.com",
+          "cname": "No CNAME"
+        },
+        "headers": {
+          "hsts": "Missing",
+          "csp": "Missing",
+          "xFrameOptions": "SAMEORIGIN",
+          "xContentTypeOptions": "Missing",
+          "referrerPolicy": "Missing"
+        },
+        "cookies": {
+          "count": 4,
+          "cookies": [
+            {
+              "name": "__Secure-STRP",
+              "secure": true,
+              "httpOnly": false,
+              "sameSite": "strict"
+            },
+            {
+              "name": "AEC",
+              "secure": true,
+              "httpOnly": true,
+              "sameSite": "lax"
+            },
+            {
+              "name": "NID",
+              "secure": false,
+              "httpOnly": true,
+              "sameSite": "Missing"
+            },
+            {
+              "name": "__Secure-BUCKET",
+              "secure": true,
+              "httpOnly": true,
+              "sameSite": "Missing"
+            }
+          ]
+        }
+      },
+      "reputationIntel": {
+        "virustotal": {
+          "malicious": 0,
+          "suspicious": 0,
+          "harmless": 63,
+          "undetermined": 28,
+          "reputation": 701,
+          "status": "success"
+        },
+        "abuseipdb": {
+          "abuseConfidenceScore": 0,
+          "totalReports": 0,
+          "lastReportedAt": null,
+          "country": "US",
+          "usageType": "Content Delivery Network",
+          "isp": "Google LLC",
+          "domain": "google.com",
+          "isWhitelisted": true,
+          "status": "success"
+        }
+      }
+    },
+    "status": "completed"
+  },
+  {
     "id": "62404ffc-6122-40db-8b53-e5942aaae6fa",
     "target": {
       "domain": "flipkart.com",
